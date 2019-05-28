@@ -11,6 +11,7 @@
         <!-- Javascript -->
         <script src="js/jquery/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/fb.js"></script>
     </head>
     <body>
         <header>
@@ -80,26 +81,34 @@
         </section>
         <section id="team">
             <h2>Our Team</h2>
+            <h3>These are the people living the mupsychology experience.</h3>
         </section>
         <section id="contact">
             <h2>Contact us</h2>
             <form id="contactUsForm">
                 <div class="form-group">
-                    <label for="contactName">Name:</label>
-                    <input type="text" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Enter Name">
+                    <label for="contactName">*Name:</label>
+                    <input type="text" aria-required="true" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Enter Name">
+                    <p id="nameHelp" class="help">The Name is required</p>
                 </div>
                 <div class="form-group">
-                    <label for="contactEmail">Email address:</label>
-                    <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <label for="contactEmail">*Email address:</label>
+                    <input type="email" aria-required="true" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <p id="contactEmail" class="help">The email is required</p>
                 </div>
                 <div class="form-group">
-                    <label for="contactComents">Comments:</label>
-                    <textarea class="form-control" id="contactComents" aria-describedby="emailHelp" rows="3"></textarea>
+                    <label for="contactComents">*Comments:</label>
+                    <textarea class="form-control" aria-required="true" id="contactComents" aria-describedby="commentsHelp" rows="3"></textarea>
+                    <p id="commentsHelp" class="help">Comments are required</p>
                 </div>
                 <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </section>
         <footer>
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                    
+            <div id="status">
+            </div>
             <div>Copiright 2019 - All rights reserved</div>
         </footer>
     </body>
