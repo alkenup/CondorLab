@@ -1,25 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>CondorLabs</title>
+        <meta charset="UTF-8">
+        <title>Muspichology</title>
+        <!-- Style Sheets -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+        <!-- Javascript -->
+        <script src="js/jquery/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
-            <h1>Condor Labs</h1>
-            <nav>
-                <ul>
-                    <li><a>Hiring</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Our Team</a></li>
-                    <li><a>Our Work</a></li>
-                    <li><a>Contac Us</a></li>
-                </ul>
-            </nav>
+            
         </header>
-        <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <figure navbar-brand>
+                <img id="banner" src="resources/images/banner.png" alt="Muspichology">
+            </figure>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida quam ipsum, sed pharetra tellus rhoncus in. Quisque rhoncus rhoncus auctor. Aenean quis pretium felis. In egestas imperdiet aliquet. Quisque non pretium mi. Pellentesque consectetur lacinia rhoncus. Donec sed lacus tristique nibh aliquam dapibus. Maecenas arcu eros, volutpat eget lacinia id, iaculis sit amet tortor. Aliquam rutrum lacus ligula, et euismod purus aliquam vel. Pellentesque iaculis orci a elit mattis, quis auctor nisl eleifend. Integer est risus, efficitur vel lacus sit amet, volutpat interdum diam. Mauris at dolor est. Nam ultrices vitae libero varius venenatis. In hac habitasse platea dictumst. Phasellus tempor suscipit magna a faucibus. Etiam pulvinar finibus metus eget lobortis.
+            </p>
+            <p>
+                Suspendisse quam nibh, facilisis a massa id, cursus facilisis est. Duis pellentesque, diam non auctor vehicula, lorem metus dictum est, vel mollis tortor libero sit amet metus. Sed imperdiet rutrum sagittis. Nulla auctor felis sed hendrerit tristique. Integer faucibus, mauris at auctor convallis, ante velit auctor ipsum, id vulputate urna turpis non velit. In ut massa augue. Etiam vel viverra sapien. Nam aliquam, massa vitae bibendum suscipit, ante odio sodales ipsum, ac fermentum purus lorem sit amet neque. Ut pretium ligula non accumsan commodo. Pellentesque sed lacinia leo, semper tristique nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed libero sit amet eros luctus iaculis. Ut dui quam, accumsan vitae lorem et, egestas laoreet nisl.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About us</h2>
+            <p>
+                Donec eros nisl, luctus vel libero eget, mollis lobortis nisl. Sed ac vulputate mi. Sed eu auctor sem. Nam nisl sapien, luctus in congue nec, egestas ac velit. Suspendisse potenti. Integer ut urna ut odio imperdiet viverra sed a ex. Phasellus in erat quis dui vulputate sollicitudin vel tempor turpis. Pellentesque non finibus nunc. Sed viverra nulla metus, eget ornare odio feugiat pharetra. Curabitur eu mattis nisl. Nunc ut ante sodales, vestibulum quam at, ultricies erat.
+            </p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <article>
+                <ul>
+                    <li>
+                        <i class="fas fa-music"></i> Psychological attention
+                    </li>
+                    <li>
+                        <i class="fas fa-music"></i> Parenting counseling
+                    </li>
+                    <li>
+                        <i class="fas fa-music"></i> Ludic-musical workshops
+                    </li>
+                    <li>
+                        <i class="fas fa-music"></i> Live children's music for family activities
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+        </section>
+        <section id="contact">
+            <h2>Contact us</h2>
+            <form id="contactUsForm">
+                <div class="form-group">
+                    <label for="contactName">Name:</label>
+                    <input type="text" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email address:</label>
+                    <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="contactComents">Comments:</label>
+                    <textarea class="form-control" id="contactComents" aria-describedby="emailHelp" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
         </section>
         <footer>
-
+            <div>Copiright 2019 - All rights reserved</div>
         </footer>
     </body>
 </html>
