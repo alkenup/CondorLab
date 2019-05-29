@@ -70,7 +70,7 @@ p {
     text-align: justify;
 }
 
-#contactUsForm, article {
+.littleBox {
     background: #FFFFFF;
     border: 1px solid #AEB8E4;
     border-radius: 10px; 
