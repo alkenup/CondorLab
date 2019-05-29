@@ -13,7 +13,7 @@ $.ajax({
   success: function(data){
      console.log(data);
     for( x in data.data ){
-      $('#galeria-instagram').append('<li><img src="'+data.data[x].images.thumbnail.url+'"></li>');
+      $('#instagramPics').append('<li><img class="imgCircle" src="'+data.data[x].images.thumbnail.url+'"></li>');
     }
   },
   error: function(data){

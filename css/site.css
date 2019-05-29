@@ -70,13 +70,35 @@ p {
     text-align: justify;
 }
 
+#instagramPics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imgCircle{
+    margin: 15px;
+    border-radius: 50%;
+    border: 3px solid white;    
+}
+
 .littleBox {
     background: #FFFFFF;
     border: 1px solid #AEB8E4;
     border-radius: 10px; 
     margin: 0 auto;
     padding: 5px;
-    width: 500px;
+    max-width: 500px;
+}
+
+.mediumBox {
+    background: #DACEB3;
+    border: 1px solid #AEB8E4;
+    border-radius: 10px; 
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 800px;
 }
 
 #contactUsForm .form-group {
