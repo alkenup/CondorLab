@@ -1,4 +1,12 @@
 
+var access_token = location.hash.split('=')[1];
+
+if (location.hash) {
+
+} else {
+    location.href="https://instagram.com/oauth/authorize/?display=touch&client_id=1af79f89bc4b4e20ad917e6e381bc960&redirect_uri=https://alkenup.github.io/CondorLab//&response_type=token";
+}
+/*
 var clientid = '1af79f89bc4b4e20ad917e6e381bc960';
 var userid = 2317972600;
 var num_photos = 20;
@@ -17,4 +25,4 @@ $.ajax({
   error: function(data){
     console.log(data);
   }
-});
+});*/
