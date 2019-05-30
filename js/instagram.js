@@ -15,6 +15,7 @@ $.ajax({
       $('#instagramPics').append('<div class="item"><a target="_bank" href="'+data.data[x].link+'"><img src="'+data.data[x].images.thumbnail.url+'"></a></li>');
     }
     drawDiamonds();
+    $('#instagramPics').css('height', '+=100');
   },
   error: function(data){
     console.log(data);

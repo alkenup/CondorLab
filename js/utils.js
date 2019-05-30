@@ -37,7 +37,6 @@ function drawDiamonds() {
 }
 
 function drawCircles() {
-    $("#instagramPics").diamonds();
     $("#instagramPics").diamonds("destroy");
     $('.item img').css({
         'border-radius': '50%',
