@@ -17,6 +17,7 @@ $(document).ready(function(){
     });
 });
 
+
 function drawDiamonds() {
     $('.item img').css({
         'border-radius': '',
@@ -28,7 +29,7 @@ function drawDiamonds() {
         size : 200, // Size of diamonds in pixels. Both width and height.
         gap : 5, // Pixels between each square.
         hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
-        autoRedraw : false, // Auto redraw diamonds when it detects resizing.
+        autoRedraw : true, // Auto redraw diamonds when it detects resizing.
         itemSelector : ".item" // the css selector to use to select diamonds-items.
     });
 
