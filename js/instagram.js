@@ -11,10 +11,10 @@ $.ajax({
   type: 'GET',
   data: {client_id: clientid, count: num_photos},
   success: function(data){
-     console.log(data);
     for( x in data.data ){
-      $('#instagramPics').append('<li><img class="imgCircle" src="'+data.data[x].images.thumbnail.url+'"></li>');
+      $('#instagramPics').append('<div class="item"><a target="_bank" href="'+data.data[x].link+'"><img src="'+data.data[x].images.thumbnail.url+'"></a></li>');
     }
+    drawDiamonds();
   },
   error: function(data){
     console.log(data);

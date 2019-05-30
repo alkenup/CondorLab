@@ -3,22 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <title>Muspichology</title>
+
         <!-- Style Sheets -->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/site.css">
+
         <!-- Javascript -->
         <script src="js/jquery/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="js/instagram.js"></script>
+        <script src="js/utils.js"></script>
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round&display=swap" rel="stylesheet">
+        
+        <!-- diamond js taken from https://github.com/mqchen/jquery.diamonds.js/ -->
+        <link rel="stylesheet" type="text/css" href="css/diamonds.css">
+        <script src="js/jquery.diamonds.js"></script>
     </head>
     <body>
         <header>
             
         </header>
         <nav class="navbar navbar-expand-lg fixed-top">
-            <figure navbar-brand>
+            <figure id="logo" navbar-brand>
                 <img id="banner" src="resources/images/banner.png" alt="Muspichology">
             </figure>
 
@@ -28,7 +38,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
@@ -46,23 +56,30 @@
                 </ul>
             </div>
         </nav>
-        <section id="home">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida quam ipsum, sed pharetra tellus rhoncus in. Quisque rhoncus rhoncus auctor. Aenean quis pretium felis. In egestas imperdiet aliquet. Quisque non pretium mi. Pellentesque consectetur lacinia rhoncus. Donec sed lacus tristique nibh aliquam dapibus. Maecenas arcu eros, volutpat eget lacinia id, iaculis sit amet tortor. Aliquam rutrum lacus ligula, et euismod purus aliquam vel. Pellentesque iaculis orci a elit mattis, quis auctor nisl eleifend. Integer est risus, efficitur vel lacus sit amet, volutpat interdum diam. Mauris at dolor est. Nam ultrices vitae libero varius venenatis. In hac habitasse platea dictumst. Phasellus tempor suscipit magna a faucibus. Etiam pulvinar finibus metus eget lobortis.
-            </p>
-            <p>
-                Suspendisse quam nibh, facilisis a massa id, cursus facilisis est. Duis pellentesque, diam non auctor vehicula, lorem metus dictum est, vel mollis tortor libero sit amet metus. Sed imperdiet rutrum sagittis. Nulla auctor felis sed hendrerit tristique. Integer faucibus, mauris at auctor convallis, ante velit auctor ipsum, id vulputate urna turpis non velit. In ut massa augue. Etiam vel viverra sapien. Nam aliquam, massa vitae bibendum suscipit, ante odio sodales ipsum, ac fermentum purus lorem sit amet neque. Ut pretium ligula non accumsan commodo. Pellentesque sed lacinia leo, semper tristique nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed libero sit amet eros luctus iaculis. Ut dui quam, accumsan vitae lorem et, egestas laoreet nisl.
-            </p>
+        <section>
+            <span class="anchor" id="home"></span>
+            <article class="box bigBox">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida quam ipsum, sed pharetra tellus rhoncus in. Quisque rhoncus rhoncus auctor. Aenean quis pretium felis. In egestas imperdiet aliquet. Quisque non pretium mi. Pellentesque consectetur lacinia rhoncus. Donec sed lacus tristique nibh aliquam dapibus. Maecenas arcu eros, volutpat eget lacinia id, iaculis sit amet tortor. Aliquam rutrum lacus ligula, et euismod purus aliquam vel. Pellentesque iaculis orci a elit mattis, quis auctor nisl eleifend. Integer est risus, efficitur vel lacus sit amet, volutpat interdum diam. Mauris at dolor est. Nam ultrices vitae libero varius venenatis. In hac habitasse platea dictumst. Phasellus tempor suscipit magna a faucibus. Etiam pulvinar finibus metus eget lobortis.
+                </p>
+                <p>
+                    Suspendisse quam nibh, facilisis a massa id, cursus facilisis est. Duis pellentesque, diam non auctor vehicula, lorem metus dictum est, vel mollis tortor libero sit amet metus. Sed imperdiet rutrum sagittis. Nulla auctor felis sed hendrerit tristique. Integer faucibus, mauris at auctor convallis, ante velit auctor ipsum, id vulputate urna turpis non velit. In ut massa augue. Etiam vel viverra sapien. Nam aliquam, massa vitae bibendum suscipit, ante odio sodales ipsum, ac fermentum purus lorem sit amet neque. Ut pretium ligula non accumsan commodo. Pellentesque sed lacinia leo, semper tristique nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed libero sit amet eros luctus iaculis. Ut dui quam, accumsan vitae lorem et, egestas laoreet nisl.
+                </p>
+            </article>
         </section>
-        <section id="about">
+        <section>
+            <span class="anchor" id="about"></span>
             <h2>About us</h2>
-            <p>
-                Donec eros nisl, luctus vel libero eget, mollis lobortis nisl. Sed ac vulputate mi. Sed eu auctor sem. Nam nisl sapien, luctus in congue nec, egestas ac velit. Suspendisse potenti. Integer ut urna ut odio imperdiet viverra sed a ex. Phasellus in erat quis dui vulputate sollicitudin vel tempor turpis. Pellentesque non finibus nunc. Sed viverra nulla metus, eget ornare odio feugiat pharetra. Curabitur eu mattis nisl. Nunc ut ante sodales, vestibulum quam at, ultricies erat.
-            </p>
+            <article class="box bigBox">
+                <p>
+                    Donec eros nisl, luctus vel libero eget, mollis lobortis nisl. Sed ac vulputate mi. Sed eu auctor sem. Nam nisl sapien, luctus in congue nec, egestas ac velit. Suspendisse potenti. Integer ut urna ut odio imperdiet viverra sed a ex. Phasellus in erat quis dui vulputate sollicitudin vel tempor turpis. Pellentesque non finibus nunc. Sed viverra nulla metus, eget ornare odio feugiat pharetra. Curabitur eu mattis nisl. Nunc ut ante sodales, vestibulum quam at, ultricies erat.
+                </p>
+            </article>
         </section>
-        <section id="services">
+        <section>
+            <span class="anchor" id="services"></span>
             <h2>Services</h2>
-            <article class="littleBox">
+            <article class="box littleBox">
                 <ul>
                     <li>
                         <i class="fas fa-music"></i> Psychological attention
@@ -79,16 +96,18 @@
                 </ul>
             </article>
         </section>
-        <section id="team">
+        <section>
+            <span class="anchor" id="team"></span>
             <h2>Our Team</h2>
-            <h3>These are the people living the mupsychology experience.</h3>
-            <article class="mediumBox">
-                <ul id="instagramPics"></ul>
+            <article class="box bigBox">
+                <h3>These are the people living the mupsychology experience. <button id="shape" onclick="changeShape()" value=""></button></h3>
+                <div id="instagramPics"></div>
             </article>
         </section>
-        <section id="contact">
+        <section>
+            <span class="anchor" id="contact"></span>
             <h2>Contact us</h2>
-            <form id="contactUsForm" class="littleBox">
+            <form id="contactUsForm" class="box littleBox">
                 <div class="form-group">
                     <label for="contactName">*Name:</label>
                     <input type="text" aria-required="true" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Enter Name">
