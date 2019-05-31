@@ -237,7 +237,13 @@
         var html = this._renderHtml(rows);
 
         this.wrapElement.append(html);
-
+        /* Fix height beggin */
+        // MB : looks if the last child has not content 
+        this.wrapElement.css('height',''); // remove the height to autocalculate and not be fixed
+        if(this.wrapElement.find('.diamond-row-lower').last().html() != "") {
+            this.wrapElement.css('height','+='+this.options.size/2); // adds the size/2 because the umage is 45 degrees rotation ang the picture size increse by 50%
+        }
+        /* end fix*/
         this._triggerEvent("afterDraw");
     };
     
