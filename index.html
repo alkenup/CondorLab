@@ -24,9 +24,7 @@
         <script src="js/jquery.diamonds.js"></script>
     </head>
     <body>
-        <header>
-            
-        </header>
+        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <figure id="logo" navbar-brand>
                 <img id="banner" src="resources/images/banner.png" alt="Muspichology">
@@ -56,6 +54,8 @@
                 </ul>
             </div>
         </nav>
+        
+        <!-- Home Section -->
         <section>
             <span class="anchor" id="home"></span>
             <article class="box bigBox">
@@ -67,6 +67,8 @@
                 </p>
             </article>
         </section>
+        
+        <!-- About Section -->
         <section>
             <span class="anchor" id="about"></span>
             <h2>About us</h2>
@@ -76,6 +78,8 @@
                 </p>
             </article>
         </section>
+        
+        <!-- Services Section -->
         <section>
             <span class="anchor" id="services"></span>
             <h2>Services</h2>
@@ -96,6 +100,8 @@
                 </ul>
             </article>
         </section>
+        
+        <!-- Team Section -->
         <section>
             <span class="anchor" id="team"></span>
             <h2>Our Team</h2>
@@ -104,10 +110,13 @@
                 <div id="instagramPics"></div>
             </article>
         </section>
+        
+        <!-- Contact Section -->
         <section>
             <span class="anchor" id="contact"></span>
             <h2>Contact us</h2>
-            <form id="contactUsForm" class="box littleBox">
+            <!-- TODO: Send Form Not Implemented Yet-->
+            <form id="contactUsForm" class="box littleBox" method="POST">
                 <div class="form-group">
                     <label for="contactName">*Name:</label>
                     <input type="text" aria-required="true" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Enter Name">
@@ -126,7 +135,10 @@
                 <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </section>
+
+        <!-- Footer Section -->
         <footer>
+            <!-- TODO: Social buttons implements -->
             <!--fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button-->
             <div>Copiright 2019 - All rights reserved</div>
         </footer>

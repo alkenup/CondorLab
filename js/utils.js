@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /* code to hide the navbar on click */
     $('.nav-link').on('click', function(){
         if($('.navbar-toggler').css('display') != 'none')
         {
@@ -6,6 +7,7 @@ $(document).ready(function(){
         }
     });
 
+    /* code to scroll and not jumps on select a menu item */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -17,7 +19,7 @@ $(document).ready(function(){
     });
 });
 
-
+/* function to draw the diamons image galery */
 function drawDiamonds() {
     $('.item img').css({
         'border-radius': '',
@@ -37,6 +39,7 @@ function drawDiamonds() {
     $('#shape').html('&#9679;');   
 }
 
+/* function to draw the circled image galery */
 function drawCircles() {
     $("#instagramPics").diamonds("destroy");
     $('.item img').css({
@@ -48,6 +51,7 @@ function drawCircles() {
     $('#shape').html('&#10070;');
 }
 
+/* function to change the shape of image galery. This is nly to show both galeries remove on client desition*/
 function changeShape(shape) {
     if($('#shape').val() == "diamond") {
         drawCircles();

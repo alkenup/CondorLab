@@ -1,3 +1,5 @@
+// All this comments and functions was token from the fb login button tutorial
+
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
