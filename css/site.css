@@ -129,6 +129,7 @@ p {
     margin: 0 auto;
     padding: 5px;
 }
+
 .littleBox {
     max-width: 500px;
 }
@@ -167,18 +168,36 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 767px) { 
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 768px) {
     html {
         height: 100%;
         font-family: Verdana, Arial, Helvetica, sans-serif;
-        font-size: 1.0cm !important;
+        font-size: 1.2cm;
+    }
+    
+    .littleBox {
+        max-width: 98%;
+    }
+    
+    .mediumBox {
+        max-width: 98%;
     }
 }
- 
-@media (max-width: 480px) { 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     html {
         height: 100%;
         font-family: Verdana, Arial, Helvetica, sans-serif;
-        font-size: 1.2cm !important;
+        font-size: 0.9cm;
     }
-}
+    
+    .littleBox {
+        max-width: 95%;
+    }
+    
+    .mediumBox {
+        max-width: 95%;
+    }
+} 
