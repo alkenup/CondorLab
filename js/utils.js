@@ -1,23 +1,38 @@
 $(document).ready(function(){
-    /* code to hide the navbar on click */
-    $('.nav-link').on('click', function(){
-        if($('.navbar-toggler').css('display') != 'none')
-        {
-            $('.navbar-toggler').click();
-        }
+    $('#collapseExample').on('shown.bs.collapse', function() {
+        console.log("shown");
+    }).on('show.bs.collapse', function() {
+        console.log("show");
     });
-
     /* code to scroll and not jumps on select a menu item */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            var element = this.getAttribute('href');
+            $("#navbarSupportedContent").on('hidden.bs.collapse', function() {
+                scrollPage(element)
+            })
+            /* code to hide the navbar on click */
+            if($('.navbar-toggler').css('display') != 'none') {
+                $('.navbar-toggler').click();
+            }
+            else {
+                scrollPage(element)
+            }
         });
     });
 });
+
+function scrollPage(element) {
+    var headerOffset = $("#menu").outerHeight(true);
+    var elementPosition = $(element).position().top; // the 10 represent the margings. TODO: get the margin tp size automactly
+    var offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
 
 /* function to draw the diamons image galery */
 function drawDiamonds() {
