@@ -11,6 +11,7 @@ $(document).ready(function(){
             var element = this.getAttribute('href');
             $("#navbarSupportedContent").on('hidden.bs.collapse', function() {
                 scrollPage(element)
+                $("#navbarSupportedContent").off('hidden.bs.collapse');
             })
             /* code to hide the navbar on click */
             if($('.navbar-toggler').css('display') != 'none') {
